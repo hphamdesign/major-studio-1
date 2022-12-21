@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+        <title>Is the world in need of more skilled health personnel?</title>
+        <link rel="stylesheet" href="styles.css">
+         
+    </head>
+    <body>
+        <div class= "header"> 
+            Is The World In Need Of More Skilled Health Personnel?
+        </div>
+        <div class="main">
+            <div class= "legend-vertical">
+                <div class = "label"> Proportion of birth attended by skilled health personnel (%)</div>
+                <div>
+                      <svg id="my_dataviz" height=400 width=150></svg>
+                </div>
+            </div>
+             <div id="map"></div>
+       </div> 
+       
+     <footer>
+        <div class= "legend-horizontal">
+            <div class = "label2">
+                Maternal Mortality Ratio (per 100,000 births)
+            </div>
+            
+            <div>
+                  <svg id="my_dataviz2" height=60 width=400></svg>
+            </div>
+        </div> 
+    </footer>
+        
+    
+    <script src="script.js"></script>
+    </body>
+</html>

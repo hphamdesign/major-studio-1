@@ -1,0 +1,217 @@
+GeoAreaName,AUD%,LegalAge
+Afghanistan,0.4,Prohibited
+Albania,5.9,18
+Andorra,5.9,18
+Angola,6,18
+Antigua and Barbuda,6.5,16
+Argentina,6.8,18
+Armenia,5.7,18
+Australia,4.4,18
+Austria,12,18
+Austria,12,16
+Azerbaijan,6,18
+Bahamas,6.7,18
+Bahrain,1.6,None
+Bahrain,1.6,Prohibited
+Bangladesh,0.8,21
+Barbados,6.7,18
+Belarus,18.8,18
+Belgium,8.1,18
+Belgium,8.1,16
+Belize,7.3,18
+Benin,6.4,20
+Bhutan,2.1,18
+Bolivia (Plurinational State of),6.7,18
+Bosnia and Herzegovina,6,18
+Botswana,7.1,18
+Brazil,4.2,18
+Brunei Darussalam,2.3,Prohibited
+Bulgaria,6.9,18
+Burkina Faso,1.8,18
+Burundi,6.8,18
+Cabo Verde,6.3,18
+Cambodia,5.1,None
+Cameroon,7,18
+Canada,8,18
+Canada,8,19
+Central African Republic,3.8,None
+Chad,0.7,18
+Chile,6,18
+China,4.4,18
+Colombia,7,18
+Comoros,0.7,Prohibited
+Comoros,0.7,18
+Congo,2.1,18
+Cook Islands,5.3,18
+Costa Rica,6.9,18
+Côte d'Ivoire,10,14
+Croatia,5.8,18
+Cuba,6.6,16
+Cyprus,6.9,18
+Czechia,6,18
+Democratic People's Republic of Korea,3.5,18
+Democratic Republic of the Congo,5,18
+Denmark,7.5,18
+Djibouti,0.8,None
+Dominica,6.8,16
+Dominican Republic,6.8,18
+Ecuador,6.7,18
+Egypt,1.4,21
+El Salvador,6.2,18
+Equatorial Guinea,6.8,21
+Eritrea,2.2,18
+Estonia,12.2,18
+Eswatini,7.1,18
+Ethiopia,2.5,21
+Fiji,5.4,18
+Finland,9.1,18
+Finland,9.1,20
+France,7,18
+Gabon,6.9,18
+Gambia,1,16
+Georgia,4.6,18
+Germany,6.8,18
+Germany,6.8,16
+Ghana,4.1,18
+Greece,6.1,18
+Grenada,6.6,16
+Guatemala,6.4,18
+Guinea,0.7,None
+Guinea-Bissau,1,None
+Guyana,7.2,18
+Haiti,6.9,None
+Honduras,6.7,18
+Hungary,21.2,18
+Iceland,4.4,20
+India,4.9,18
+India,4.9,21
+India,4.9,25
+India,4.9,Prohibited
+Indonesia,0.8,Prohibited
+Indonesia,0.8,21
+Iran (Islamic Republic of),1,Prohibited
+Iraq,0.4,
+Ireland,8.5,18
+Israel,5.9,18
+Italy,1.3,18
+Jamaica,5.2,18
+Japan,3.4,20
+Jordan,0.4,18
+Kazakhstan,6,18
+Kazakhstan,6,21
+Kenya,4,18
+Kiribati,5.2,21
+Kuwait,0.4,Prohibited
+Kyrgyzstan,5.9,18
+Lao People's Democratic Republic,5.2,18
+Latvia,15.5,18
+Lebanon,8.7,18
+Lesotho,5.2,18
+Liberia,5.2,18
+Libya,0.3,Prohibited
+Lithuania,11,16
+Lithuania,11,18
+Luxembourg,6.6,16
+Madagascar,2.6,
+Malawi,3.5,18
+Malaysia,3,Prohibited
+Malaysia,3,21
+Maldives,2.3,Prohibited
+Mali,0.8,18
+Malta,3.6,17
+Mauritania,0.4,Prohibited
+Mauritius,5.5,18
+Mexico,2.3,18
+Micronesia (Federated States of),5.3,18
+Micronesia (Federated States of),5.3,21
+Mongolia,7.8,21
+Montenegro,6,18
+Morocco,0.4,Prohibited
+Morocco,0.4,16
+Mozambique,3.2,18
+Myanmar,1.9,18
+Namibia,6.3,18
+Nauru,5.3,21
+Nepal,1.8,18
+Netherlands,1.5,18
+New Zealand,4,18
+Nicaragua,6.6,18
+Niger,0.7,18
+Nigeria,0.6,18
+Niue,5.3,
+North Macedonia,6,18
+Norway,7.2,18
+Norway,7.2,16
+Oman,0.4,18
+Pakistan,0.4,Prohibited
+Palau,5.3,21
+Panama,6.8,18
+Papua New Guinea,5.3,None
+Papua New Guinea,5.3,18
+Paraguay,7,20
+Peru,8.9,18
+Philippines,5.3,18
+Poland,12.8,18
+Portugal,6.8,18
+Qatar,0.3,Prohibited
+Republic of Korea,13.9,19
+Republic of Moldova,6,18
+Romania,2.8,18
+Russian Federation,20.9,16
+Russian Federation,20.9,18
+Rwanda,7,18
+Saint Kitts and Nevis,6.6,16
+Saint Lucia,6.5,16
+Saint Vincent and the Grenadines,6.9,16
+Samoa,5.4,21
+Sao Tome and Principe,6.4,None
+Saudi Arabia,0.3,prohibited
+Senegal,0.7,18
+Serbia,5.9,18
+Seychelles,7.3,18
+Sierra Leone,3.5,None
+Singapore,1.1,18
+Slovakia,12.2,18
+Slovenia,13.9,18
+Solomon Islands,5.3,21
+Somalia,0.4,Prohibited
+South Africa,7,18
+Spain,1.5,18
+Sri Lanka,3.1,21
+Sudan,1.3,Prohibited
+Sudan,1.3,None
+Suriname,6.9,18
+Sweden,11,18
+Sweden,11,20
+Switzerland,9.5,16
+Switzerland,9.5,18
+Syrian Arab Republic,0.6,
+Tajikistan,0.9,18
+Thailand,5.4,20
+Timor-Leste,1.8,None
+Togo,9.5,16
+Togo,9.5,18
+Tonga,5.2,18
+Trinidad and Tobago,6.7,18
+Tunisia,0.6,Prohibited
+Tunisia,0.6,18
+Türkiye,4.8,18
+Turkmenistan,5.9,21
+Tuvalu,5.3,18
+Uganda,7.1,18
+Uganda,7.1,16
+Ukraine,6,18
+United Arab Emirates,0.7,21
+United Kingdom of Great Britain and Northern Ireland,8.7,18
+United Republic of Tanzania,6.8,18
+United States of America,13.9,21
+Uruguay,6.4,18
+Uzbekistan,5.9,20
+Vanuatu,5.2,18
+Venezuela (Bolivarian Republic of),6.9,18
+Viet Nam,5.4,18
+Yemen,0.4,Prohibited
+Zambia,5.5,14
+Zambia,5.5,16
+Zambia,5.5,18
+Zimbabwe,6.4,18

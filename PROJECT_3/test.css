@@ -1,0 +1,27 @@
+.spacer{
+    height:0%;
+}
+
+#grid-container2 {
+    opacity: 0;
+    -webkit-transition: all 0s ease-in-out;
+         -moz-transition: all 0s ease-in-out;
+            -ms-transition: all 0s ease-in-out;
+             -o-transition: all 0s ease-in-out;
+                    transition: all 0s ease-in-out;
+}
+#grid-container2.visible {
+    position: sticky;
+    top:0px;
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+}
+
+#grid-container1{
+    position: sticky;
+    top:0px
+}

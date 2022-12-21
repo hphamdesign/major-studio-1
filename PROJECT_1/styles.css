@@ -1,0 +1,80 @@
+body{
+    margin-top: 1.25em;
+    margin-left: 0;
+    background-color: #ffffff;
+}
+
+.header { 
+    z-index: 100;
+    position: absolute;
+    top:2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: futura;
+    font-weight: 500;
+    font-size: 22px;
+    color: #3F2F2E;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*footer{*/
+/*    position: absolute;*/
+/*    bottom:0;*/
+/*    align-items:center;*/
+    /*justify-content: center;*/
+/*}*/
+
+.legend-horizontal{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    align-items: center;
+    position: absolute;
+    bottom:1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.legend-vertical {
+    z-index: 100;
+    margin-top: 15vh;
+    margin-left: 1.5em;
+}
+
+.label {
+    text-align: left;
+    font-family: futura;
+    font-size: .8rem;
+    color: #3F2F2E;
+    max-width: 8rem;
+    padding-top: 2rem;
+}
+
+.label2 {
+    text-align: left;
+    font-family: futura;
+    font-size: .8rem;
+    color: #3F2F2E;
+    align-items: center ;
+    max-width: 10rem;
+}
+
+#my_dataviz2 {
+    margin-top: 2em;
+    font-family: futura;
+    font-size: .75rem;
+}
+
+#map {
+        position: absolute;
+        top: 0;
+        bottom:0;
+        width: 100%;
+    }

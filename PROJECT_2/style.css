@@ -1,0 +1,281 @@
+div.tooltip {
+    z-index: 999;
+    position: absolute;
+    text-align: left;
+    padding: .5rem;
+    background: white;
+    color: #313639;
+    border: 1px solid #313639;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace;
+   }
+   
+body{
+    background-color:rgb(10, 10, 41);
+    /* background-color:transparent; */
+}
+
+.header{
+    margin-top: 40px;
+    margin-left: 80px;
+    text-align: left;
+    font-family: "Inconsolata", monospace;
+    font-weight: 500;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+#my_dataviz{
+    margin-left: 0px;
+}
+
+#grid-chart{
+    margin-left: 0px;
+}
+
+.legalAge{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.percent{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.legendBox{
+    z-index: 100;
+    /* display: grid;
+    grid-template-columns: 200px 200px 200px; */
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    left: 80px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+.legendBox2{
+    z-index: 100;
+    /* display: grid;
+    grid-template-columns: 200px 200px 200px; */
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    left: 1000px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+.myLegendIcon{
+    margin-top: 0px;
+    margin-left: 1000px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#sort_btn {
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-indent: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 200px;
+    height: 52px;
+    left: 2550px;
+    top: 40px;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  #sort_btn:hover {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:#F5F5F5;
+  }
+  #sort_btn:focus {
+    outline:none;
+  }
+  #sort_btn:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content:"";
+    position: relative;
+    top:-10px;
+    right:-5px;
+  }
+  #sort_btn.asc:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    content:"";
+    position: relative;
+    top:13px;
+    right:-5px;
+  }
+  #sort_btn.desc:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    content:"";
+    position: relative;
+    top:-10px;
+    right:-5px;
+  }
+
+/* Ellipse 1 */
+#info_btn{
+box-sizing: border-box;
+border-radius: 30px;
+background-color: transparent;
+position: absolute;
+width: 42px;
+height: 42px;
+left: 925px;
+top: 45px;
+border: 3px solid #F5F5F5;
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 120%;
+color: #F5F5F5;}
+
+#info_btn:hover{
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color:#F5F5F5;}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* overflow: auto; Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 62.5%; /* Could be more or less, depending on screen size */
+}
+  
+  /* The Close Button */
+.close {
+    color: black;
+    float: right;
+    margin-top:18px;
+    margin-right:30px;
+    font-size: 45px;
+    font-weight: lighter;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1{
+  font-family: 'Roboto Mono';
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+hr.solid {
+  flex: 1;
+  border-top: 2px solid black;
+}
+
+h4{
+  font-family: 'Inconsolata';
+  padding-left: 30px;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  /* line-height: 128%; */
+/* identical to box height, or 46px */
+
+color: #000000;
+}
+
+.para {
+/* P1 - Paragraph 1 */
+font-family: 'Roboto';
+margin-top: -36px;
+padding-left: 30px;
+margin-right: 20px;
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 136%;
+color: #000000;
+}
+
+a:link {
+  color: #004CDE;
+}
+
+a:visited {
+  color: #004CDE;
+}
+
+a:focus {
+  color: #004CDE;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: #004CDE;
+}

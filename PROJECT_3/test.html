@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://d3js.org/d3.v4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<link rel="stylesheet" href="test.css">
+  </head>
+
+<body>
+	<!-- <div id="trigger1" class="spacer"></div>
+	<div id="pin1" class="box2">
+		<div id='grid-chart-before'></div>
+	</div> -->
+	<div id='grid-container1'>
+		<div id='grid-chart-before'></div>
+	</div>
+
+	<div id='grid-container2'>
+		<div id='grid-chart-after'></div>
+	</div>
+
+	<svg class="spacer" height=800></svg>
+
+</body>
+<script>
+// init controller
+var controller = new ScrollMagic.Controller();
+
+var drawGraph = function(){
+
+//number of circles to color in to visualize percent
+var percentNumber = 3000;
+
+//variables for the font family, and some colors
+var fontFamily = "helvetica";
+var twitterFill = "transparent";
+var twitterFillActive = "#ffffff";
+var svgBackgroundColor = 'black';
+
+//width and height of the SVG
+const width = 1250;
+const height = 640;
+
+//create an svg with width and height
+var svg = d3.select('#grid-chart-before')
+	.append('svg')
+	.attr("width", width)
+	.attr("height", height)
+	.style('background-color', svgBackgroundColor)
+	.attr("transform", "translate(80,80)");
+
+//10 rows and 10 columns 
+var numRows = 64;
+var numCols = 125;
+
+//x and y axis scales
+var y = d3.scaleBand()
+	.range([0,640])
+	.domain(d3.range(numRows));
+
+var x = d3.scaleBand()
+	.range([0, 1250])
+	.domain(d3.range(numCols));
+
+//the data is just an array of numbers for each cell in the grid
+var data = d3.range(numCols*numRows);
+
+//container to hold the grid
+var container = svg.append("g")
+	.attr("transform", "translate(0,0)");
+
+
+container.selectAll("rects")
+		.data(data)
+		.enter().append("rect")
+		.attr("id", function(d){return "id"+d;})
+		.attr('x', function(d){return x(d%numCols);})
+		.attr('y', function(d){return y(Math.floor(d/numCols));})
+		.attr('width', 10)
+		.attr('height',10)
+		.attr('fill', 'black')
+		.style('stroke', '#E6E6E6');
+
+}
+
+//call function to draw the graph
+drawGraph();
+
+var drawGraph = function(){
+
+	//number of circles to color in to visualize percent
+	var percentNumber = 3000;
+
+	//variables for the font family, and some colors
+	var fontFamily = "helvetica";
+	var twitterFill = "transparent";
+	var twitterFillActive = "#ffffff";
+	var svgBackgroundColor = 'black';
+
+	//width and height of the SVG
+	const width = 1250;
+	const height = 640;
+
+	//create an svg with width and height
+	var svg = d3.select('#grid-chart-after')
+		.append('svg')
+		.attr("width", width)
+		.attr("height", height)
+    	.style('background-color', svgBackgroundColor)
+        .attr("transform", "translate(80,80)");
+
+	//10 rows and 10 columns 
+	var numRows = 64;
+	var numCols = 125;
+
+	//x and y axis scales
+	var y = d3.scaleBand()
+		.range([0,640])
+		.domain(d3.range(numRows));
+
+	var x = d3.scaleBand()
+		.range([0, 1250])
+		.domain(d3.range(numCols));
+
+	//the data is just an array of numbers for each cell in the grid
+	var data = d3.range(numCols*numRows);
+
+	//container to hold the grid
+	var container = svg.append("g")
+		.attr("transform", "translate(0,0)");
+	
+
+	container.selectAll("rects")
+			.data(data)
+			.enter().append("rect")
+			.attr("id", function(d){return "id"+d;})
+			.attr('x', function(d){return x(d%numCols);})
+			.attr('y', function(d){return y(Math.floor(d/numCols));})
+			.attr('width', 10)
+            .attr('height',10)
+			.attr('fill', function(d){return d < percentNumber ? twitterFillActive : twitterFill;})
+			.style('stroke', '#E6E6E6');
+}
+
+	//call function to draw the graph
+	drawGraph();
+
+// build scene
+var scene = new ScrollMagic.Scene({
+							triggerElement: "#grid-container2",
+							triggerHook: 0.5, // show, when scrolled 10% into view
+							duration: "90%", // hide 10% before exiting view (80% + 10% from bottom)
+							offset: 0 // move trigger to center of element
+						})
+						.setClassToggle("#grid-container2", "visible") // add class to reveal
+						.addTo(controller);
+
+// $(function () { // wait for document ready
+// // build scene
+// var scene2 = new ScrollMagic.Scene({triggerElement: "#grid-container2", duration: 1000})
+// 				.setPin("#grid-container2")
+// 				.addIndicators({duration: 1000}) // add indicators (requires plugin)
+// 				.addTo(controller);
+// });
+</script>
+</html>

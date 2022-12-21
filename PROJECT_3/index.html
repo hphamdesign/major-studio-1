@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans&family=Libre+Baskerville:ital@0;1&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lora:wght@600&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <title>When Healthy Diet Isn’t a Choice</title>
+</head>
+<body>
+    <!-- Animated header -->
+    <div class="bar">
+        <div class="bar-content">
+        <span> When Healthy Diet Isn’t a Choice </span>
+        <span id="small_text"> Did you know healthy food is a previledge? </span>
+        <span> When Healthy Diet Isn’t a Choice </span>
+        <span id="small_text"> Did you know healthy food is a previledge? </span>
+        <span> When Healthy Diet Isn’t a Choice </span>
+        <span id="small_text"> Did you know healthy food is a previledge? </span>
+        <span> When Healthy Diet Isn’t a Choice </span>
+        <span id="small_text">  Did you know healthy food is a previledge? </span>
+        <span> When Healthy Diet Isn’t a Choice </span>
+        <span id="small_text"> Did you know healthy food is a previledge? </span>
+        <span> When Healthy Diet Isn’t a Choice </span>
+        <span id="small_text"> Did you know healthy food is a previledge? </span>
+        <span> When Healthy Diet Isn’t a Choice </span>
+        <span id="small_text"> Did you know healthy food is a previledge? </span>
+        <!-- <span class="bar_content">
+            Did you know healthy food is a previledge?
+        </span> -->
+      </div>
+      <hr class="solid">
+      </div>
+
+     <!-- Landing screen -->
+        <div class="content" id="landing">
+        <h1>When Healthy Diet Isn’t a Choice</h1>
+        <hr class="semi-solid" id="line1">
+        <h2>Did you know That healthy food is a previledge?</h3>
+        <hr class="semi-solid" id="line2">
+        <h3>A visual essay and data visualization about the affordability of healthy food</h4>
+        <h4>by &nbsp <b>Huong Pham</b></h5>
+        </div>
+        <img src="assets/header_image.png" alt="Image" class="header_img" />
+        
+    <!-- Social Media Part -->
+        <div class="content" id="social-media">
+        <h5>So Healthy Diets Became a Trend on Social Media?</h5>
+        <hr class="semi-solid" id="line3">
+        <p>When it comes to the world of food and the health industry social media, more specifically Instagram has played an enormous role in the rise of the nations’ awareness of their diet and their health. Regular motivation, if you’re following people which keep you interested and excited about nutrition and living a healthy lifestyle it’s an easy and convenient place to seek that boost of external motivation.</p>
+        </div>  
+    
+        <!-- Graph 1 -->
+        <!-- Social Media graph -->
+        <div>
+            <!-- <img src="assets/tiktok-hashtag.png" alt="Image" class="graph1"/> -->
+            <svg id="tiktok-graph" height=1100 width=innerwidth>
+            </svg>
+            
+        </div>
+    
+    <!-- Quotes -->
+        <div class="content" id="quote">
+            <h6>All You Needed To Start one Was 
+                <span class="green-header">motivation?</span>
+            </h6>
+            <!-- <h6>But <span class="orange-header">3 billion</span> people 
+                    <span class="orange-header">cannot even afford</span> 
+                    a healthy diet. 
+            </h6>
+            <h6>Let's look into this together!</h6> -->
+            <!-- <img src="assets/health-food.png" alt="Healthy Food" class="healthy-food" /> -->
+            <div id="health-food-stage2"></div>
+        </div>
+
+    <!-- Graph 2 - Individual Country -->
+        <select id="selectButton"></select>
+        <div class="content" id="plate-graph">
+            <!-- <h5>In 2020, in South Korea</h5> -->
+            <div id="plate-container">
+                <div id="single-graph">
+                    <div id="single-graph-header"></div>
+                    <!-- <img src="assets/plate.png" alt="Full Plate" class="full-plate"> -->
+                </div>
+            </div>
+
+            <p class="small-quote">Even 
+                <span class="orange-header">having the option</span> 
+                to start a healthy diet 
+                <span class="orange-header">is a previledge</span>
+                .
+            </p>
+        </div>
+
+    <!-- Part 3 - Whole World View -->
+        <div class="content" id="plate-graph"> 
+            <h5>What about the whole world together?</h5>
+            <hr class="semi-solid" id="line3">
+            <p><span id="span">When it comes to the world of food and the health industry social media, more specifically Instagram has played an enormous role in the rise of the nations’ awareness of their diet and their health. Regular motivation, if you’re following people which keep you interested and excited about nutrition and living a healthy lifestyle it’s an easy and convenient place to seek that boost of external motivation.</span></p>
+            <p><span id="span">When it comes to the world of food and the health industry social media, more specifically Instagram has played an enormous role in the rise of the nations’ awareness of their diet and their health. Regular motivation, if you’re following people which keep you interested and excited about nutrition and living a healthy lifestyle it’s an easy and convenient place to seek that boost of external motivation.</span>
+            </p> 
+        </div>
+
+        <div class="graph-tittle"> Prevelance of undernourishment in 190 countries </div>
+        <div id="world-graph"></div>
+
+        <div class="top10-graph"></div>
+
+    <script src="tiktok-graph.js"></script>
+    <script src="health-food-graph.js"></script>
+    <script src="single-chart.js"></script>
+    <script src="world-chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <title>Does the law make us more sober?</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            Does the Law Make Us More Sober?
+        </div>
+
+        <div id="my_dataviz">
+            <button id="info_btn" type="button" class="btn btn-primary">
+                i
+                </button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                     <h1>You Might Be Curious...</h1>
+                     <hr class="solid">
+                     <h4>What am I looking at?</h4>
+                     <p class="para">This visualization is a playful exploration on the relationship between Alcohol Use Disorder (AUD) and minimum legal drinking age in countries across the world. The visualization revolves around two questions: Does a higher drinking age prevent Alcohol Use Disorder? Does the law make any difference? Each bottle represents a country, with the color depicting the legal drinking age, and the titt angle depecting the percentage of AUD. The more tilted the bottle, the bigger the percentage of Alcohol Use Disorder in that country.</p>
+                     <h4>Where is the data from?</h4>
+                     <p class="para">The data for Alcohol Use Disorder (%) is collected from the <a href="https://unstats.un.org/sdgs/dataportal" target="_blank">SDG Global Data Portal</a>, Goal 3, Target 3.5.
+                        <br>The data for Legal Drinking Age for each country is collected from <a href="http://iardwebprod.azurewebsites.net/science-resources/detail/Minimum-Legal-Age-Limits" target="_blank">International Alliance for Responsible Drinking</a>.</p>
+                     <h4>Why explore this?</h4>
+                     <p class="para">Although ther are many other factors that could affect the risk of AUD in each country (such as genetic, physiological, psychological,and social factors), the minimum legal drinking age is enforced in the majority of countries to prevent harmful consequences and alcoholism. However, just by a glance, we could see that certain countries with the highest drinking age of 21 (or even prohibited) turn out to have higher AUD% than those with a lower legal drinking age. Then what is the law actually doing? What are the reasons behind these black holes in policies? And how can those countries with higher AUD% learn from those with lower AUD%.</p>
+                    </div>
+            </div>
+            
+            <button id="sort_btn" type="button" class="btn btn-secondary">
+                Sort by age
+                </button>
+            <div id="grid-chart"></div>
+        
+        <div class="legendBox">
+            <div class="legalAge">
+                Legal Drinking Age
+            </div>
+            <svg id="myLegend" width=1200></svg>
+        </div>
+
+        <div class="legendBox2">
+            <div class="percent">
+                Alcohol Use Disorder (%)
+            </div>
+            <div id="bottleLegend"></div>
+            <svg id="myLegendIcon" width=1200></svg>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js" type="text/javascript"></script> -->
+        <script src="script.js"></script>
+        <script src="legend.js"></script>
+        
+    </body>
+</html>
