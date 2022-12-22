@@ -316,6 +316,18 @@ p+p {
 	bottom: 0%;
 }
 
+#quote2-legend{
+	margin-left: 45%;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 150%;
+	text-transform: capitalize;
+	color: #000000;
+
+}
+
 .pixels-graph{
 	background-image: url("assets/health-food.png");
 	background-repeat: no-repeat;
