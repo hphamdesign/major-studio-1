@@ -67,29 +67,28 @@ hr.solid {
 }
 
 hr.semi-solid {
-	position: absolute;
 	width: 650px;
 	height: 0px;
-	left: 50%;
-	/* bring your own prefixes */
-	transform: translate(-50%, -50%);
-	top: 225px;
+	align-items: center;
 	border: 0.75px solid rgba(0, 0, 0, 0.6);
 }
 
+hr#line1 {
+	top: 24vh;
+}
+
 hr#line2 {
-	top: 340px;
+	top: 32vh;
 }
 
 hr#line3 {
-	top: 120px;
+	top: 10vh;
 }
 
 .content {
 	margin-top: 0;
 	/* top: 255px; */
-	margin-left: 50%;
-	transform: translate(-50%, 0%);
+	align-items: center;
 }
 
 #landing {
@@ -102,7 +101,7 @@ hr#line3 {
 
 #quote {
 	margin-top: 20px;
-	margin-bottom: 100px;
+	margin-bottom: 20px;
 	padding: 0;
 }
 
@@ -165,7 +164,7 @@ h5 {
 	padding: 0;
 	margin-left: 50%;
 	margin-top: 5vh;
-	margin-bottom: 5vh;
+	margin-bottom: 0;
 	transform: translate(-50%, 0%);
 	font-family: 'Caladea';
 	font-style: italic;
@@ -177,9 +176,9 @@ h5 {
 	color: #000000;
 }
 
-.h5 {
+.tittle {
 	width: max-content;
-	padding: 0;
+	padding-bottom: 10vh;
 	font-family: 'Caladea';
 	font-style: italic;
 	font-weight: 400;
@@ -194,7 +193,7 @@ h6 {
 	width: max-content;
 	margin-left: 50%;
 	transform: translate(-50%, 0%);
-	margin-top: 0;
+	margin-top: 50px;
 	margin-bottom: 0;
 	font-family: 'Baskerville';
 	font-style: italic;
@@ -205,10 +204,6 @@ h6 {
 	text-align: center;
 	text-transform: capitalize;
 	color: #000000;
-}
-
-#single-graph-header{
-	text-align: center;
 }
 
 .orange-header {
@@ -246,8 +241,9 @@ p+p {
 	text-indent: 2em;
 }
 
-.p3{
-	word-break: break-all;
+#legend{
+	position: absolute;
+	width: 430px;
 	font-family: 'Noto Serif';
 	font-style: normal;
 	font-weight: 500;
@@ -257,7 +253,7 @@ p+p {
 	color: #000000;
 }
 
-.p4{
+#source{
 	font-family: 'Noto Serif';
 	font-style: normal;
 	font-weight: 300;
@@ -268,11 +264,19 @@ p+p {
 	color: #000000;
 }
 
+.subTitle{
+	font-family: 'Noto Serif';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	/* or 34px */
+	align-items: center;
+	padding-right: 10px;
+	text-transform: capitalize;
+	color: #000000;
+}
+
 .small-quote {
-	width: 1000px;
-	margin-left: 50%;
-	margin-top: 5vh;
-	transform: translate(-50%, 0%);
 	font-family: 'Noto Serif';
 	font-style: normal;
 	font-weight: 600;
@@ -292,8 +296,19 @@ p+p {
 	bottom: 0%;
 }
 
+#quote3{
+	margin-top: 100px;
+	width: 100vw;
+}
+
+#quote3-text{
+	height: 20vh;;
+	margin-top: 40vh;
+	margin-bottom: 40vh;
+}
+
 .healthy-food {
-	width: 2450px;
+	width: 2500px;
 	margin-top: 5vh;
 	margin-left: 50%;
 	transform: translate(-50%, 0%);
@@ -301,14 +316,13 @@ p+p {
 	bottom: 0%;
 }
 
-#health-food-stage20{
-	stroke: #000000;
-}
-
 .pixels-graph{
 	background-image: url("assets/health-food.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	margin-top: 5vh;
+	margin-left: 50%;
+	transform: translate(-50%, 0%);
 }
 
 .graph1 {
@@ -320,18 +334,16 @@ p+p {
 
 .arc{
 	box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2);
-	transform: translate(0, -54px);
+	transform: translate(0, -2px);
 }
 
 #plate-graph.content{
 	width: 100vw;
 	margin-top: 5vh;
+	margin-bottom: 10vh;
 }
 
 #plate-container{
-	background-image: url("assets/plate.png");
-	background-repeat: no-repeat;
-	background-position: 50%;
 	width: 100vw;
 }
 
@@ -341,13 +353,19 @@ p+p {
 	background-position: 50%;
 }
 
+#single-graph-header{
+	text-align: center;
+	margin-bottom: 2vh;
+}
+
 #single-graph{
 	width: 100%;
-	
+	background-image: url("assets/plate.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
 .graph-tittle{
-	margin-top: 5vh;
 	font-family: 'Noto Serif';
 	font-style: normal;
 	font-weight: 700;
@@ -356,6 +374,18 @@ p+p {
 	/* or 46px */
 	text-align: center;
 	text-transform: capitalize;
+	color: #000000;
+}
+
+#dataPoint{
+	position: absolute;
+	width: 430px;
+	left: 70vw;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 142%;
 	color: #000000;
 }
 
@@ -389,12 +419,13 @@ p+p {
 .tool{
 	background: transparent;
 }
+#dropdown{
+	margin-bottom: 3vh;
+	transform: translate(41.5%, 0%);
+}
 
 #selectButton {
 	box-sizing: border-box;
-	margin-left: 50%;
-	transform: translate(-50%, 0%);
-	margin-top: 5vh;
 	width: 300px;
 	height: 60px;
 	background: linear-gradient(180deg, rgba(186, 186, 186, 0) -65.38%, #F8F8F8 75.24%);
@@ -410,3 +441,4 @@ p+p {
 	text-transform: uppercase;
 	color: #000000;
 }
+

@@ -26,8 +26,18 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
     var countryTitle = d3.select("#single-graph-header")
         .data(data)
         .append("text")
-        .attr("class","h5")
+        .attr("x", "0").attr("y", 250)
+        .attr("class","tittle")
         .text( d => `In 2020, In ${d.GeoAreaName}`)
+
+    //Data
+    var dataPoint = d3.select("#single-graph")
+        .data(modifiedData)
+        .append("text")
+        .text( d => `${d[country]}% of the population was undernourished`)
+        .attr("id","dataPoint")
+
+    console.log(dataPoint)
 
     const width = innerWidth,
     height = 1000;
@@ -40,21 +50,20 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
 
     // append the svg object to the div called 'my_dataviz'
     let arcs = d3.select("#single-graph")
-    .data(modifiedData)
-    .append("svg")
-        .attr("width", width)
-        .attr("height", height)
-    .append("g")
-        .attr("transform", `translate(${width/2}, ${height/2})`)
-    .append("path")
-    .attr("class","arc")
-    .attr("d", function(d) {return arcGen(d[country])})
-    // .attr("fill", "#E6E6E6")
-    .attr("fill","#E6E6E6")
+        .data(modifiedData)
+        .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+        .append("g")
+            .attr("transform", `translate(${width/2}, ${height/2})`)
+        .append("path")
+        .attr("class","arc")
+        .attr("d", function(d) {return arcGen(d[country])})
+        .attr("fill","#E6E6E6")
     
-    function update(dropdownValue){
+    function update(dropdownValue,dataValue){
         country = dropdownValue
-
+        
         arcs
         .transition()
         .duration(200)
@@ -65,7 +74,10 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
         .remove()
 
         countryTitle
-        .text( d => `In 2020, In ${country}`)
+        .text(d => `In 2020, In ${country}`)
+
+        dataPoint
+        .text(d => `${d[country]}% of the population was undernourished`)
     }
 
      // When the button is changed, run the updateChart function

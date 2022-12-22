@@ -121,18 +121,11 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
             }
         })
         .on('mouseover', function (event, d) {
-            // d3.select(this).transition()
-            //     .duration('50')
-            //     .attr('opacity', '.5');
-            // //Makes the new div appear on hover:
-            // div.transition()
-            //     .duration('50')
-            //     .style("opacity", 1);
             let content =''
 
             if (d.$2020 === "NaN") {
                 content =  `Data not available`
-            } else { content = `<span class=num>${d.$2020}% </span> <br> of the population was undernourished`}
+            } else { content = `${d.GeoAreaName} <br> <span class=num>${d.$2020}% </span> <br> of the population was undernourished`}
             
             tooltip.html(content).style('visibility', 'visible')
 

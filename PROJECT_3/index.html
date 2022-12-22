@@ -56,43 +56,54 @@
         
     <!-- Social Media Part -->
         <div class="content" id="social-media">
-        <h5>So Healthy Diets Became a Trend on Social Media?</h5>
-        <hr class="semi-solid" id="line3">
-        <p>When it comes to the world of food and the health industry social media, more specifically Instagram has played an enormous role in the rise of the nations’ awareness of their diet and their health. Regular motivation, if you’re following people which keep you interested and excited about nutrition and living a healthy lifestyle it’s an easy and convenient place to seek that boost of external motivation.</p>
-        </div>  
-    
-        <!-- Graph 1 -->
+            <h5>So Healthy Diets Became a Trend on Social Media?</h5>
+            <hr class="semi-solid" id="line3">
+            <p>When it comes to the world of food and the health industry social media has played an enormous role in the rise of the nations’ awareness of their diet. The hashtag #healthydiet has gained 350 million views on TikTok - one of the most popular digital content platforms in 2022. Anyone with access to Tiktok can be introduced to a variable selection of healthy diets and how to best tailor them to your own personal preferences or body types. In other words, it is much easier these days to start a healthy diet today, with all the resources and information provided on social media.</p>
+        
+            <!-- Graph 1 -->
         <!-- Social Media graph -->
         <div>
-            <!-- <img src="assets/tiktok-hashtag.png" alt="Image" class="graph1"/> -->
             <svg id="tiktok-graph" height=1100 width=innerwidth>
             </svg>
             
         </div>
     
+        </div>  
+    
     <!-- Quotes -->
         <div class="content" id="quote">
-            <h6>All You Needed To Start one Was 
-                <span class="green-header">motivation?</span>
-            </h6>
-            <!-- <h6>But <span class="orange-header">3 billion</span> people 
-                    <span class="orange-header">cannot even afford</span> 
-                    a healthy diet. 
-            </h6>
-            <h6>Let's look into this together!</h6> -->
-            <!-- <img src="assets/health-food.png" alt="Healthy Food" class="healthy-food" /> -->
-            <div id="health-food-stage2"></div>
+            <div id="quote1">
+                <h6>All You Needed To Start one Was 
+                    <span class="green-header">motivation?</span>
+                </h6>
+                <img src="assets/health-food.png" alt="Healthy Food" class="healthy-food">
+            </div>
+            
+            <div id="quote2">
+                <h6>But <span class="orange-header">3 billion</span> people 
+                        <span class="orange-header">cannot even afford</span> 
+                        a healthy diet. 
+                </h6>
+                <div id="health-food-stage2"></div>
+            </div>
+
+            <div id="quote3">
+                <div id="quote3-text">
+                    <h6>Let's look into this together!</h6>
+                </div>
+            </div>
         </div>
 
     <!-- Graph 2 - Individual Country -->
-        <select id="selectButton"></select>
         <div class="content" id="plate-graph">
-            <!-- <h5>In 2020, in South Korea</h5> -->
+            <div id="dropdown">
+                    <span class="subTitle">Pick a country</span>
+                <select id="selectButton"></select>
+            </div>
+
             <div id="plate-container">
-                <div id="single-graph">
-                    <div id="single-graph-header"></div>
-                    <!-- <img src="assets/plate.png" alt="Full Plate" class="full-plate"> -->
-                </div>
+                <div id="single-graph-header"></div>
+                <div id="single-graph"></div>
             </div>
 
             <p class="small-quote">Even 
@@ -104,18 +115,16 @@
         </div>
 
     <!-- Part 3 - Whole World View -->
-        <div class="content" id="plate-graph"> 
+        <div class="content" id="world-graph"> 
             <h5>What about the whole world together?</h5>
             <hr class="semi-solid" id="line3">
-            <p><span id="span">When it comes to the world of food and the health industry social media, more specifically Instagram has played an enormous role in the rise of the nations’ awareness of their diet and their health. Regular motivation, if you’re following people which keep you interested and excited about nutrition and living a healthy lifestyle it’s an easy and convenient place to seek that boost of external motivation.</span></p>
-            <p><span id="span">When it comes to the world of food and the health industry social media, more specifically Instagram has played an enormous role in the rise of the nations’ awareness of their diet and their health. Regular motivation, if you’re following people which keep you interested and excited about nutrition and living a healthy lifestyle it’s an easy and convenient place to seek that boost of external motivation.</span>
+            <p><span id="span">The prevelance of undernourishment across the world varies greatly, noticeably between developed and developing countries. The countries in which undernourishment is most relevant are Yemen (41.6%), Democratic People's Republic of Korea (41.6%), Haiti (47.2%), Madagascar (48.5%), and Somalia (53.1%). Meanwhile, there are 113 out of 208 countries with only less than 10% prevelance. </span></p>
             </p> 
+
+            <div class="graph-tittle"> Prevelance of undernourishment in 207 countries </div>
+            <div id="world-graph"></div>
+            <div class="top10-graph"></div>
         </div>
-
-        <div class="graph-tittle"> Prevelance of undernourishment in 190 countries </div>
-        <div id="world-graph"></div>
-
-        <div class="top10-graph"></div>
 
     <script src="tiktok-graph.js"></script>
     <script src="health-food-graph.js"></script>

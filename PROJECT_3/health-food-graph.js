@@ -21,7 +21,7 @@ var drawGraph = function(){
         .attr("class","pixels-graph")
 		.attr("width", width)
 		.attr("height", height)
-        .attr("transform", "translate(-530,80)");
+        .attr("transform", "translate(0,80)");
 
 	//10 rows and 10 columns 
 	var numRows = 64;

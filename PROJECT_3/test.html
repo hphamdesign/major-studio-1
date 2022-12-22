@@ -10,10 +10,7 @@
   </head>
 
 <body>
-	<!-- <div id="trigger1" class="spacer"></div>
-	<div id="pin1" class="box2">
-		<div id='grid-chart-before'></div>
-	</div> -->
+
 	<div id='grid-container1'>
 		<div id='grid-chart-before'></div>
 	</div>
@@ -22,7 +19,7 @@
 		<div id='grid-chart-after'></div>
 	</div>
 
-	<svg class="spacer" height=800></svg>
+	<svg class="spacer" height=1500></svg>
 
 </body>
 <script>
@@ -91,79 +88,109 @@ drawGraph();
 
 var drawGraph = function(){
 
-	//number of circles to color in to visualize percent
-	var percentNumber = 3000;
+//number of circles to color in to visualize percent
+var percentNumber = 3000;
 
-	//variables for the font family, and some colors
-	var fontFamily = "helvetica";
-	var twitterFill = "transparent";
-	var twitterFillActive = "#ffffff";
-	var svgBackgroundColor = 'black';
+var randomBox = generateRandom(3000)
 
-	//width and height of the SVG
-	const width = 1250;
-	const height = 640;
+console.log(randomBox)
 
-	//create an svg with width and height
-	var svg = d3.select('#grid-chart-after')
-		.append('svg')
-		.attr("width", width)
-		.attr("height", height)
-    	.style('background-color', svgBackgroundColor)
-        .attr("transform", "translate(80,80)");
+//variables for the colors
+var noneFill = "transparent";
+var fill = "#ffffff";
 
-	//10 rows and 10 columns 
-	var numRows = 64;
-	var numCols = 125;
+//width and height of the SVG
+const width = 1250;
+const height = 640;
 
-	//x and y axis scales
-	var y = d3.scaleBand()
-		.range([0,640])
-		.domain(d3.range(numRows));
+//create an svg with width and height
+var svg = d3.select('#grid-chart-after')
+	.append('svg')
+	.attr("class","pixels-graph")
+	.attr("width", width)
+	.attr("height", height)
+	.attr("transform", "translate(80,80)");
 
-	var x = d3.scaleBand()
-		.range([0, 1250])
-		.domain(d3.range(numCols));
+//10 rows and 10 columns 
+var numRows = 64;
+var numCols = 125;
 
-	//the data is just an array of numbers for each cell in the grid
-	var data = d3.range(numCols*numRows);
+//x and y axis scales
+var y = d3.scaleBand()
+	.range([0,1280])
+	.domain(d3.range(numRows));
 
-	//container to hold the grid
-	var container = svg.append("g")
-		.attr("transform", "translate(0,0)");
-	
+var x = d3.scaleBand()
+	.range([0, 2500])
+	.domain(d3.range(numCols));
 
-	container.selectAll("rects")
-			.data(data)
-			.enter().append("rect")
-			.attr("id", function(d){return "id"+d;})
-			.attr('x', function(d){return x(d%numCols);})
-			.attr('y', function(d){return y(Math.floor(d/numCols));})
-			.attr('width', 10)
-            .attr('height',10)
-			.attr('fill', function(d){return d < percentNumber ? twitterFillActive : twitterFill;})
-			.style('stroke', '#E6E6E6');
+//the data is just an array of numbers for each cell in the grid
+var data = d3.range(numCols*numRows);
+
+//container to hold the grid
+var container = svg.append("g")
+	.attr("transform", "translate(0,0)");
+
+
+container.selectAll("rects")
+		.data(data)
+		.enter().append("rect")
+		.attr("id", function(d){return "id"+d;})
+		.attr('x', function(d){return x(d%numCols);})
+		.attr('y', function(d){return y(Math.floor(d/numCols));})
+		.attr('width', 20)
+		.attr('height',20)
+		// .attr('fill', function(d){return d < percentNumber ? twitterFillActive : twitterFill;})
+		.attr('fill', function(d){return randomBox.includes(d) ? fill : noneFill;})
+
 }
 
-	//call function to draw the graph
-	drawGraph();
+//call function to draw the graph
+drawGraph();
+
+// function generateRandom(num){
+//     var result = []
+//     for(var i = 0; i < num; i++){
+//         result.push(Math.floor(Math.random()*8000))
+//     }
+//     return result
+// }
+
+function generateRandom(num) {
+let results = []
+
+while (results.length < num) {
+	let randomNumber = Math.floor(Math.random()*8000)
+	if(!results.includes(randomNumber)){
+		results.push(randomNumber)
+	}
+}
+
+return results
+}
 
 // build scene
 var scene = new ScrollMagic.Scene({
 							triggerElement: "#grid-container2",
 							triggerHook: 0.5, // show, when scrolled 10% into view
-							duration: "90%", // hide 10% before exiting view (80% + 10% from bottom)
-							offset: 0 // move trigger to center of element
+							duration: "50%", // hide 10% before exiting view (80% + 10% from bottom)
+							offset: 50, // move trigger to center of element
 						})
 						.setClassToggle("#grid-container2", "visible") // add class to reveal
+						// .addIndicators()
 						.addTo(controller);
 
-// $(function () { // wait for document ready
-// // build scene
-// var scene2 = new ScrollMagic.Scene({triggerElement: "#grid-container2", duration: 1000})
-// 				.setPin("#grid-container2")
-// 				.addIndicators({duration: 1000}) // add indicators (requires plugin)
-// 				.addTo(controller);
-// });
+
+const scrollToTop = document.querySelector('#grid-container1');
+
+// Add event listener to make button appear when scrolling down
+const showGraph = window.addEventListener('scroll', () => {
+    if (window.scrollY < 750) {
+        scrollToTop.classList.add('grid-container-sticky');
+    } else {
+    scrollToTop.classList.remove('grid-container-sticky');
+    }
+});
+
 </script>
 </html>
