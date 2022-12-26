@@ -17,25 +17,6 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
     //12 rows and 18 columns 
     var numRows = 11;
     var numCols = 20;
-
-    //Grid Function
-    // const gridWidth = 10
-    // const calGridLength = (size){
-    //     return Math.ceil(size/gridWidth)
-    // }
-    // gridWidth = calcGridLength(data.length)
-
-    // const xScaleMin = d3.min(data, d => d.$2020)
-    // const xScaleMax = d3.max(data, d => d.$2020)
-
-    // const xScale = d3.scaleLinear()
-    //     .domain([0, gridWidth-1])
-    //     .range([0,width])
-
-    // const yScale = d3.scaleLinear()
-    // .domain([0, gridWidth-1])
-    // .range([0,width])
-    
     
     //x and y axis scales
     var y = d3.scaleBand()
@@ -56,10 +37,9 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
     container.selectAll("hiddenCircle")
         .data(grid)
         .enter().append("circle")
-        // .attr('class','thumbnail')
         .attr("id", function (d) { return "id" + d; })
-        .attr('cx', function (d) { return x(d % numCols); })
-        .attr('cy', function (d) { return y(Math.floor(d / numCols)); })
+        .attr('cx', function (d) { return x(d%numCols); })
+        .attr('cy', function (d) { return y(Math.floor(d/numCols)); })
         .attr('r', 4)
         .attr('visibility', 'hidden')
 
@@ -127,12 +107,10 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
                 content =  `Data not available`
             } else { content = `${d.GeoAreaName} <br> <span class=num>${d.$2020}% </span> <br> of the population was undernourished`}
             
-            tooltip.html(content).style('visibility', 'visible')
-
-        })
-        .on('mousemove', (e, d) => {
-            tooltip.style("left", (e.pageX) + "px")
-            tooltip.style("top", (e.pageY ) + "px");
+            tooltip.html(content)
+                    .style('visibility', 'visible')
+                    .style("left", (event.pageX) + "px")
+                    .style("top", (event.pageY - 10) + "px");	
         })
         .on('mouseout', function (d, i) {
             tooltip.style('visibility','hidden')

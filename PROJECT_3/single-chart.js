@@ -61,7 +61,7 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
         .attr("d", function(d) {return arcGen(d[country])})
         .attr("fill","#E6E6E6")
     
-    function update(dropdownValue,dataValue){
+    function update(dropdownValue){
         country = dropdownValue
         
         arcs
