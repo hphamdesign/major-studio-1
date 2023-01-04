@@ -32,7 +32,7 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
 
     //container to hold the grid
     var container = svg.append("g")
-        .attr("transform", "translate(200,100)");
+        .attr("transform", "translate(200,80)");
 
     container.selectAll("hiddenCircle")
         .data(grid)
