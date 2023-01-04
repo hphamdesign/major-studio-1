@@ -33,13 +33,13 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
     //Data
     var dataPoint = d3.select("#single-graph")
         .data(modifiedData)
-        .append("text")
-        .text( d => `${d[country]}% of the population was undernourished`)
+        .append("div")
+        .html( d => `<div class="stats">${d[country]}%</div>of the population was undernourished`)
         .attr("id","dataPoint")
 
     console.log(dataPoint)
 
-    const width = innerWidth,
+    const width = 1200,
     height = 1000;
 
     var arcGen = d3.arc()
@@ -77,7 +77,7 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
         .text(d => `In 2020, In ${country}`)
 
         dataPoint
-        .text(d => `${d[country]}% of the population was undernourished`)
+        .html( d => `<div class="stats">${d[country]}%</div>of the population was undernourished`)
     }
 
      // When the button is changed, run the updateChart function

@@ -1,135 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans&family=Libre+Baskerville:ital@0;1&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lora:wght@600&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans&family=Libre+Baskerville:ital@0;1&family=Lora:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lora:wght@600&family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <title>When Healthy Diet Isn’t a Choice</title>
 </head>
+
 <body>
     <!-- Animated header -->
     <div class="bar">
         <div class="bar-content">
-        <span> When Healthy Diet Isn’t a Choice </span>
-        <span id="small_text"> Did you know healthy food is a previledge? </span>
-        <span> When Healthy Diet Isn’t a Choice </span>
-        <span id="small_text"> Did you know healthy food is a previledge? </span>
-        <span> When Healthy Diet Isn’t a Choice </span>
-        <span id="small_text"> Did you know healthy food is a previledge? </span>
-        <span> When Healthy Diet Isn’t a Choice </span>
-        <span id="small_text">  Did you know healthy food is a previledge? </span>
-        <span> When Healthy Diet Isn’t a Choice </span>
-        <span id="small_text"> Did you know healthy food is a previledge? </span>
-        <span> When Healthy Diet Isn’t a Choice </span>
-        <span id="small_text"> Did you know healthy food is a previledge? </span>
-        <span> When Healthy Diet Isn’t a Choice </span>
-        <span id="small_text"> Did you know healthy food is a previledge? </span>
-        <!-- <span class="bar_content">
+            <span> When Healthy Diet Isn’t a Choice </span>
+            <span id="small_text"> Did you know healthy food is a previledge? </span>
+            <span> When Healthy Diet Isn’t a Choice </span>
+            <span id="small_text"> Did you know healthy food is a previledge? </span>
+            <span> When Healthy Diet Isn’t a Choice </span>
+            <span id="small_text"> Did you know healthy food is a previledge? </span>
+            <span> When Healthy Diet Isn’t a Choice </span>
+            <span id="small_text"> Did you know healthy food is a previledge? </span>
+            <span> When Healthy Diet Isn’t a Choice </span>
+            <span id="small_text"> Did you know healthy food is a previledge? </span>
+            <span> When Healthy Diet Isn’t a Choice </span>
+            <span id="small_text"> Did you know healthy food is a previledge? </span>
+            <span> When Healthy Diet Isn’t a Choice </span>
+            <span id="small_text"> Did you know healthy food is a previledge? </span>
+            <!-- <span class="bar_content">
             Did you know healthy food is a previledge?
         </span> -->
-      </div>
-      <hr class="solid">
-      </div>
+        </div>
+        <hr class="solid">
+    </div>
 
-     <!-- Landing screen -->
-        <div class="content" id="landing">
+    <!-- Landing screen -->
+    <div class="content" id="landing">
         <h1>When Healthy Diet Isn’t a Choice</h1>
         <hr class="semi-solid" id="line1">
         <h2>Did you know That healthy food is a previledge?</h3>
-        <hr class="semi-solid" id="line2">
-        <h3>A visual essay and data visualization about the affordability of healthy food</h4>
-        <h4>by &nbsp <b>Huong Pham</b></h5>
-        </div>
-        <img src="assets/header_image.png" alt="Image" class="header_img" />
-        
-    <!-- Social Media Part -->
-        <div class="content" id="social-media">
-            <h5>So Healthy Diets Became a Trend on Social Media?</h5>
-            <hr class="semi-solid" id="line3">
-            <p>When it comes to the world of food and the health industry social media has played an enormous role in the rise of the nations’ awareness of their diet. The hashtag #healthydiet has gained 350 million views on TikTok - one of the most popular digital content platforms in 2022. Anyone with access to Tiktok can be introduced to a variable selection of healthy diets and how to best tailor them to your own personal preferences or body types. In other words, it is much easier these days to start a healthy diet today, with all the resources and information provided on social media.</p>
-        
-            <!-- Graph 1 -->
-        <!-- Social Media graph -->
-        <div>
-            <svg id="tiktok-graph" height=1100 width=100%>
-            </svg>
-            
-        </div>
-    
-        </div>  
-    
-    <!-- Quotes -->
-        <div class="content" id="quote">
-            <div id="quote1">
-                <h6>All You Needed To Start one Was 
-                    <span class="green-header">motivation?</span>
-                </h6>
-                <img src="assets/health-food.png" alt="Healthy Food" class="healthy-food">
-            </div>
-            
-            <div id="quote2">
-                <h6>But <span class="orange-header">3 billion</span> people 
-                        <span class="orange-header">cannot even afford</span> 
-                        a healthy diet.
-                </h6>
-                <span id="quote2-legend">1 box = 100 million people</span>
-                <div id="health-food-stage2"></div>
-            </div>
+            <hr class="semi-solid" id="line2">
+            <h3>A visual essay and data visualization about the affordability of healthy food</h4>
+                <h4>by &nbsp <b>Huong Pham</b></h5>
+    </div>
+    <img src="assets/header_image.png" alt="Image" class="header_img" />
 
-            <div id="quote3">
-                <div id="quote3-text">
-                    <h6>Let's look into this together!</h6>
+    <!-- Social Media Part -->
+    <div class="content" id="social-media">
+        <h5>So Healthy Diets Became a Trend on Social Media?</h5>
+        <hr class="semi-solid" id="line3">
+        <p>When it comes to the world of food and the health industry social media has played an enormous role in the
+            rise of the nations’ awareness of their diet. The hashtag #healthydiet has gained 350 million views on
+            TikTok - one of the most popular digital content platforms in 2022. Anyone with access to Tiktok can be
+            introduced to a variable selection of healthy diets and how to best tailor them to your own personal
+            preferences or body types. In other words, it is much easier these days to start a healthy diet today, with
+            all the resources and information provided on social media.</p>
+
+        <!-- Graph 1 -->
+        <!-- Social Media graph -->
+        <div class="graphs-container">
+            <div></div>
+            <div>
+                <img src="assets/tiktok-hashtag.png" alt="Tiktok Hashtag Graph" />
+            </div>
+            <div class="legend-container">
+                <div></div>
+                <div id="legend-maintext">
+                    <div class="legend">The #healthydiet has gained 350 million views on Tiktok</div>
+                    <div class="source"><span class="green-dot"></span> &nbsp = 100,000 views</div>
+                </div>
+                <div><div class="source">Source: The data was collected from Tiktok’s official wesite as of Nov 21 2022 10:23 am</div></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Quotes -->
+    <div class="content" id="quote">
+        <div id="quote1">
+            <h6>All You Needed To Start one Was
+                <span class="green-header">motivation?</span>
+            </h6>
+            <img src="assets/health-food.png" alt="Healthy Food" class="healthy-food">
+        </div>
+
+        <div id="quote2">
+            <h6>But <span class="orange-header">3 billion</span> people
+                <span class="orange-header">cannot even afford</span>
+                a healthy diet.
+            </h6>
+            <div id="quote2-legend"><span class="pixel"></span> &nbsp = 100 million people</div>
+            <div id="health-food-stage2"></div>
+        </div>
+
+        <div id="quote3">
+            <div id="quote3-text">
+                <h6>Let's look into this together!</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- Graph 2 - Individual Country -->
+    <div class="content" id="plate-graph">
+        
+        <div id="dropdown">
+            <span class="subTitle">Pick a country</span>
+            <select id="selectButton"></select>
+        </div>
+
+        <div id="plate-container">
+            <div id="single-graph-header"></div>
+            <div class="graphs-container">
+                <div></div>
+                <div id="single-graph"></div>
+                <div class="source">
+                    <div id="bottom-source">Source: The data is collected from the United Nations data portal</div>
                 </div>
             </div>
         </div>
-
-    <!-- Graph 2 - Individual Country -->
-        <div class="content" id="plate-graph">
-            <div id="dropdown">
-                    <span class="subTitle">Pick a country</span>
-                <select id="selectButton"></select>
-            </div>
-
-            <div id="plate-container">
-                <div id="single-graph-header"></div>
-                <div id="single-graph"></div>
-            </div>
-
-            <p class="small-quote">Even 
-                <span class="orange-header">having the option</span> 
-                to start a healthy diet 
-                <span class="orange-header">is a previledge</span>
-                .
-            </p>
-        </div>
+        
+        <p class="small-quote">Even
+            <span class="orange-header">having the option</span>
+            to start a healthy diet
+            <span class="orange-header">is a previledge</span> 
+        </p>
+        
+    </div>
 
     <!-- Part 3 - Whole World View -->
-        <div class="content" id="world-graph"> 
-            <h5>What about the whole world together?</h5>
-            <hr class="semi-solid" id="line3">
-            <p><span id="span">The prevelance of undernourishment across the world varies greatly, noticeably between developed and developing countries. The countries in which undernourishment is most relevant are Yemen (41.6%), Democratic People's Republic of Korea (41.6%), Haiti (47.2%), Madagascar (48.5%), and Somalia (53.1%). Meanwhile, there are 113 out of 208 countries with only less than 10% prevelance. </span></p>
-            </p> 
+    <div class="content" id="world-graph">
+        <h5>What about the whole world together?</h5>
+        <hr class="semi-solid" id="line3">
+        <p><span id="span">The prevelance of undernourishment across the world varies greatly, noticeably between
+                developed and developing countries. The countries in which undernourishment is most relevant are Yemen
+                (41.6%), Democratic People's Republic of Korea (41.6%), Haiti (47.2%), Madagascar (48.5%), and Somalia
+                (53.1%). Meanwhile, there are 113 out of 208 countries with only less than 10% prevelance. </span></p>
+        </p>
 
-            <div class="graph-tittle"> Prevelance of undernourishment in 208 countries </div>
-            <div id="world-graph"></div>
-            <div class="top10-graph"></div>
+        <div id="world-legend">
+            <div class="item"> <span id="hover"></span> <b> Hover to learn more</b></div>
+            <div class="item"> <span id="normal-circle"></span> &nbsp Size = Prevelence of Undernourishment % </div>
+            <div class="item"> <span id="orange-circle"></span> &nbsp Most Alarming Countries</div>
+            <div class="item"> <span id="dashed-circle"></span> &nbsp Data not available</div>
+
         </div>
 
-    <script src="tiktok-graph.js"></script>
+        <div class="graph-tittle"> Prevelance of undernourishment in 208 countries </div>
+        <div id="world-graph"></div>
+        <div class="top10-graph"></div>
+    </div>
+
     <script src="health-food-graph.js"></script>
     <script src="single-chart.js"></script>
     <script src="world-chart.js"></script>
 </body>
+
 </html>
