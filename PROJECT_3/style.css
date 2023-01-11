@@ -572,3 +572,21 @@ p+p {
 	color: #000000;
 }
 
+#world-selectButton {
+	box-sizing: border-box;
+	width: 200px;
+	height: 60px;
+	background: linear-gradient(180deg, rgba(186, 186, 186, 0) -65.38%, #F8F8F8 75.24%);
+	border: 1px solid #000000;
+	border-radius: 10px;
+	text-indent: 10px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 128%;
+	align-items: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+

@@ -8,6 +8,15 @@ d3.csv('https://raw.githubusercontent.com/hphamdesign/Data-Visualization/Project
     const width = innerWidth;
     const height = 1500;
 
+    // Find country dropdown
+    d3.select("#world-selectButton")
+    .selectAll('myOptions')
+    .data(data.filter(d => d.$2020 != "NaN"))
+    .enter()
+    .append('option')
+    .text(function (d) { return d.GeoAreaName; }) // text showed in the menu
+    .attr("value", function (d) { return d.GeoAreaName; }) // corresponding value returned by the button
+
     //create an svg with width and height
     var svg = d3.select("#world-graph")
         .append('svg')
